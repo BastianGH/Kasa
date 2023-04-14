@@ -1,5 +1,3 @@
-import './App.css';
-
 function Logement() {
   return (
     <div className="Logement">
