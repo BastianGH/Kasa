@@ -1,7 +1,7 @@
 function Home() {
   return (
     <div className="Home">
-        Voici le footer
+        Voici le home
     </div>
   );
 }

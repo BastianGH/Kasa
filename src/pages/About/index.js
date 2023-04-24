@@ -1,7 +1,7 @@
 function About() {
   return (
     <div className="About">
-        Voici le footer
+        Voici le about
     </div>
   );
 }
