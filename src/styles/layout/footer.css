@@ -6,11 +6,11 @@ footer {
     align-items: center;
     gap: 32px;
 }
-img {
+.footer-img {
     width: 122px;
     height: 34.5px;
 }
-span {
+.footer-span {
     font-weight: 500px;
     font-size: 24px;
     color: white;
