@@ -1,0 +1,18 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+
+.locations-container {
+    background-color: #F6F6F6;
+    padding: 56px 50px;
+    border-radius: 25px;
+    gap: 50px;
+    column-gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.locations-container >* {
+    flex-basis: 30%;
+}
