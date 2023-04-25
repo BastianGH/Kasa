@@ -15,7 +15,15 @@ code {
 * {
   font-family: Montserrat;
 }
-
+main {
+  height: 100%;
+  position: relative;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 ul {
   margin: 0;
   padding: 0;
