@@ -1,12 +1,13 @@
 import '../../styles/components/card.css';
 
-function Card() {
+function Card(props) {
+    const location = props.Location
     return (
       <figure>
         <a href="" >
-            <img src="" alt="" />
+            <img src={location.pictures[0]} alt={location.title} />
             <figcaption>
-                <span>Titre de la location</span>
+                <span>{location.title}</span>
             </figcaption>
         </a>
       </figure>
