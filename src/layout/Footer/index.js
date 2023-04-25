@@ -1,8 +1,12 @@
+import '../../styles/layout/footer.css';
+import logo from "../../assets/imgs/logo-white.png";
+
 function Footer() {
   return (
-    <div className="Footer">
-        Voici le footer
-    </div>
+    <footer>
+      <img src={logo} alt="Logo Kasa"/>
+      <span>© 2020 Kasa. All rights reserved</span>
+    </footer>
   );
 }
 
