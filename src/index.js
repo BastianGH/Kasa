@@ -15,12 +15,12 @@ root.render(
     <Router>
       <Header />
         <main>
-        <Routes>
-          <Route exact path="/" Component={Home} />
-          <Route path="about" Component={About} />
-          <Route path="logement" Component={Logement} />
-        </Routes>
-      </main>           
+          <Routes>
+            <Route exact path="/" Component={Home} />
+            <Route path="about" Component={About} />
+            <Route path="logement" Component={Logement} />
+          </Routes>
+        </main>           
       <Footer /> 
     </Router>
   </React.StrictMode>

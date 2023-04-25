@@ -18,6 +18,7 @@ code {
 main {
   height: 100%;
   position: relative;
+  margin: 0 100px;
 }
 footer {
   position: absolute;
