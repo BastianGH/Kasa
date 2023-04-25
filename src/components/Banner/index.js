@@ -1,11 +1,12 @@
-import '../../styles/components/card.css';
+import '../../styles/components/banner.css';
 
 function Banner(props) {
   const img = props.Img
+  const title = props.Title
     return (
-      <div>
-        <img src={img} alt="" />
-        <span>Ici la banner</span>
+      <div class="banner">
+        <img class="banner-img" src={img} alt="" />
+        <span class="banner-text" >{title}</span>
       </div>
     );
 }
