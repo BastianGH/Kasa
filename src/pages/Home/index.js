@@ -6,7 +6,7 @@ import homeBanner from "../../assets/imgs/home.jpeg";
 function Home() {
   return (
     <div>
-        <Banner Img={homeBanner} Title="" />
+        <Banner Img={homeBanner} Title="Chez vous, partout et ailleurs" />
         <div class="locations-container" >
             {locations.map((location) => (
               <Card Location={location}/>
