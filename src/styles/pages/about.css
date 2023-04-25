@@ -1,0 +1,11 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+.values-container {
+    margin: 0 108px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
