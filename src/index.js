@@ -14,14 +14,16 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
-        <main>
-          <Routes>
-            <Route exact path="/" Component={Home} />
-            <Route path="about" Component={About} />
-            <Route path="logement" Component={Logement} />
-          </Routes>
-        </main>           
-      <Footer /> 
+        <div id="container" >
+          <main>
+            <Routes>
+              <Route exact path="/" Component={Home} />
+              <Route path="about" Component={About} />
+              <Route path="logement" Component={Logement} />
+            </Routes>
+          </main>           
+          <Footer /> 
+        </div>
     </Router>
   </React.StrictMode>
 );
