@@ -1,7 +1,11 @@
+import { useParams } from "react-router-dom";
+
 function Logement() {
+  const { id } = useParams()
+
   return (
     <div className="Logement">
-        Voici le footer
+        Ceci est le logement {id}
     </div>
   );
 }

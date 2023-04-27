@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import Header from './layout/Header';
 import Footer from './layout/Footer';
@@ -20,7 +20,7 @@ root.render(
             <Routes>
               <Route exact path="/" Component={Home} />
               <Route path="about" Component={About} />
-              <Route path="logement" Component={Logement} />
+              <Route path="logement/:id" Component={Logement} />
               <Route path="*" Component={NotFound}/>
             </Routes>
           </main>           
