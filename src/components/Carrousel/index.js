@@ -1,4 +1,6 @@
+import '../../styles/components/carrousel.css';
 import React, { useState } from 'react';
+import arrow from "../../assets/imgs/side-arrow.png";
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -14,21 +16,22 @@ const Carousel = ({ images }) => {
 
   return (
     <div className="carousel">
-      <div className="carousel__image-container">
+      <div className="carousel__image-container" style={{ width: `${images.length * 100}%` }}>
         {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`slide ${index}`}
-            className={index === currentIndex ? 'active' : ''}
-          />
+            <div key={index} className={index === currentIndex ? 'active slide' : 'slide'} style={{ transform: `translateX(${-currentIndex * 100}%)` }}>
+                <img
+                    src={image}
+                    alt={`slide ${index}`}
+                />
+            </div>          
         ))}
       </div>
+      <span className="carousel__pagination" >{currentIndex+1}/{length}</span>
       <button className="carousel__prev-button" onClick={goToPrevSlide}>
-        Prev
+        <img className="prev-button_arrow" src={arrow} alt="image précédente" />
       </button>
       <button className="carousel__next-button" onClick={goToNextSlide}>
-        Next
+      <img className="next-button_arrow " src={arrow} alt="prochaine image" />
       </button>
     </div>
   );
