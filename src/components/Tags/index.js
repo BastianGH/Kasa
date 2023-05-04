@@ -7,7 +7,7 @@ function Tags(props) {
 
     const tagList = tags.map((tag, index) => (
         <span className="tag" key={index}>{tag}</span>
-      ));
+    ));
     
     return (
       <div className="tags">

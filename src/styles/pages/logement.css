@@ -52,3 +52,6 @@
 .Logement-details > * {
     width: 45%;
 }
+.Logement-details * {
+    font-size: 18px;
+}

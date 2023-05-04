@@ -30,3 +30,9 @@
     font-weight: 400;
     font-size: 24px;
 }
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

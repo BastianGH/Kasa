@@ -29,8 +29,8 @@ function Logement() {
         </div>
       </div>
       <div className="Logement-details">
-        <Collapse className="Logement-details_details" Title="Description" />
-        <Collapse className="Logement-details_items" Title="Équipements" />
+        <Collapse className="Logement-details_details" Title="Description" Paragraph={logement.description}/>
+        <Collapse className="Logement-details_items" Title="Équipements" Elements={logement.equipments} />
       </div>
     </section>
   );
