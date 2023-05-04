@@ -13,27 +13,40 @@
     justify-content: space-between;
 }
 .Logement-introduction_infos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     font-weight: 500;
     padding-bottom: 20px;
 }
 .Logement-introduction_infos-title {
     font-size: 36px;
+    margin: 0;
 }
 .Logement-introduction_infos-location {
     font-size: 18px;
 }
 
+.Logement-introduction_hostnrate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
 .Logement-introduction_host {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 10px;
 } 
 .Logement-introduction_host-name {
+    text-align: right;
     display: block;
     font-size: 18px;
     width: 40%;
 } 
 .Logement-introduction_host-photo {
+    width: 35%;
     border-radius: 50%;
 } 
 .Logement-details > * {

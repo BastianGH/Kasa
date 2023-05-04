@@ -4,6 +4,8 @@ import locations from "../../logements.json"
 
 import Carousel from "../../components/Carrousel";
 import Collapse from "../../components/Collapse";
+import Tags from '../../components/Tags';
+import Rate from '../../components/Rate'
 
 function Logement() {
   const { id } = useParams()
@@ -16,18 +18,14 @@ function Logement() {
         <div className="Logement-introduction_infos">
           <h1 className="Logement-introduction_infos-title" >{logement.title}</h1>
           <span className="Logement-introduction_infos-location" >{logement.location}</span>
-          <div className="Logement-introduction_infos-tags" >
-            {logement.tags}
-          </div>
+          <Tags tags={logement.tags}/>            
         </div>
-        <div className="Logement-introduction_host&rate">
+        <div className="Logement-introduction_hostnrate">
           <div className="Logement-introduction_host">
             <span className="Logement-introduction_host-name">{logement.host.name}</span>
             <img className="Logement-introduction_host-photo" src={logement.host.picture} alt={logement.host.name} />
           </div>
-          <div className="Logement-introduction_rating">
-            {logement.rating}
-          </div>
+          <Rate Rate={logement.rating}/>
         </div>
       </div>
       <div className="Logement-details">
