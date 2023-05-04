@@ -1,6 +1,5 @@
-.Logement-first-section,
-.Logement-second-section,
-.Logement-third-section {
+.Logement-introduction,
+.Logement-details {
     display: flex;
     justify-content: space-between;
     color: #FF6060;
@@ -9,28 +8,34 @@
 .carousel {
     padding-bottom: 70px;
 }
-
-.Logement-first-section_infos {
+.Logement-introduction {
+    display: flex;
+    justify-content: space-between;
+}
+.Logement-introduction_infos {
     font-weight: 500;
     padding-bottom: 20px;
 }
-.Logement-first-section_infos h1 {
+.Logement-introduction_infos-title {
     font-size: 36px;
 }
-.Logement-first-section_infos span {
+.Logement-introduction_infos-location {
     font-size: 18px;
 }
 
-.Logement-first-section_host {
+.Logement-introduction_host {
     display: flex;
     align-items: center;
     justify-content: space-between;
 } 
-.Logement-first-section_host span{
+.Logement-introduction_host-name {
     display: block;
     font-size: 18px;
     width: 40%;
 } 
-.Logement-first-section_host img{
+.Logement-introduction_host-photo {
     border-radius: 50%;
 } 
+.Logement-details > * {
+    width: 45%;
+}
