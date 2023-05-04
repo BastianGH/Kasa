@@ -31,7 +31,7 @@ const Carousel = ({ images }) => {
         <img className="prev-button_arrow" src={arrow} alt="image précédente" />
       </button>
       <button className="carousel__next-button" onClick={goToNextSlide}>
-      <img className="next-button_arrow " src={arrow} alt="prochaine image" />
+        <img className="next-button_arrow " src={arrow} alt="prochaine image" />
       </button>
     </div>
   );
