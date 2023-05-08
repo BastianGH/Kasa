@@ -6,7 +6,7 @@ function Collapse(props) {
     const [open, setOpen] = useState(false);
     const title = props.Title;
     const paragraph = props.Paragraph;
-    let Elements;
+    let Elements = [];
     
     if(title === 'Équipements') {
       const elements = props.Elements
@@ -27,19 +27,17 @@ function Collapse(props) {
             <span className="collapse-button_text">{title}</span>
             <img className={`collapse-button_arrow ${open ? 'open' : ''}`} src={arrow} alt="flèche d'ouverture/fermeture" />
           </button>
-          {title === 'Équipements' ? (
+          {open ? (
             <div className="collapse-content">
               <div className="collapse-content_text">
-                <ul className="elements">
-                  {Elements}
-                </ul>
+                {title === 'Équipements' ? (
+                  <ul className="elements">{Elements}</ul>
+                ) : (
+                  <p className="paragraph">{paragraph}</p>
+                )}
               </div>
             </div>
-          ) : (
-            <div className="collapse-content">
-              <p className="collapse-content_text">{paragraph}</p>
-            </div>
-          )}
+          ) : null}
         </div>      
     );
 }
