@@ -16,6 +16,7 @@
 }
 .collapse-button_arrow { 
     transition: transform 300ms ease-out;
+    width: 24px;
 }   
 .collapse-button_arrow.open {
     transform: rotate(180deg);
@@ -35,4 +36,19 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .collapse-button {
+        padding: 5px 12px;
+    }
+    .collapse-button_text  {
+        font-size: 13px;
+    }
+    .collapse-content_text  {
+        font-size: 12px;
+    }
+    .collapse-button_arrow { 
+        width: 16px;
+    }   
 }
