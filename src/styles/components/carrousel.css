@@ -15,7 +15,6 @@
     transition: transform 300ms ease-in-out;
     height: 100%;
     display: block;
-    width: 20%;
     flex-shrink: 0;
 }
 
@@ -23,7 +22,7 @@
     width: 100%;
     height: inherit;
     object-fit: cover;
-    object-position: -220px 36%;
+    object-position: 0 36%;
 }
 
 .carousel__pagination {
