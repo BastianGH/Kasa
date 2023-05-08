@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import locations from "../../logements.json"
 
-import Logement from './index';
+import Logement from '../../pages/Logement/index';
 
 function LogementWrapper(props) {
   const { id } = useParams();
