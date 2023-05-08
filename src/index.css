@@ -42,3 +42,9 @@ a {
 img {
   object-fit: cover;
 }
+
+@media screen and (max-width: 600px) {
+  main {
+      margin: 0 20px;
+  }
+}
