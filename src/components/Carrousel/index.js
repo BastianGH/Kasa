@@ -30,10 +30,10 @@ const Carousel = ({ images }) => {
         <>
           <span className="carousel__pagination" >{currentIndex + 1}/{length}</span>
           <button className="carousel__prev-button" onClick={goToPrevSlide}>
-            <img className="prev-button_arrow" src={arrow} alt="image précédente" />
+            <img className="prev-button_arrow" src={arrow} alt="flèche gauche" />
           </button>
           <button className="carousel__next-button" onClick={goToNextSlide}>
-            <img className="next-button_arrow " src={arrow} alt="prochaine image" />
+            <img className="next-button_arrow " src={arrow} alt="flèche droite" />
           </button>
         </>
       }

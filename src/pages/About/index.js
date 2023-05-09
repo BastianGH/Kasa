@@ -29,7 +29,7 @@ function About() {
 
   return (
     <div className="About" >
-        <Banner Img={aboutBanner} Title="" />
+        <Banner Img={aboutBanner} Alt="Paysage de montagnes" />
         <div className="values-container" >
             {values.map((value) => (
               <Collapse key={value.id} Title={value.title} Paragraph={value.paragraph} />
