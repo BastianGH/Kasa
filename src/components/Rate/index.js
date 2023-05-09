@@ -3,9 +3,7 @@ import fullStar from "../../assets/imgs/fullStar.png";
 import emptyStar from "../../assets/imgs/emptyStar.png";
 
 function Rate(props) {
-    const rate = props.Rate; // ratio allant de 0 à 5
-    console.log("Rate is : ")
-    console.log(rate)
+    const rate = props.Rate;
     
     const stars = [];
     for (let i = 0; i < rate; i++) {
