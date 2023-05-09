@@ -3,14 +3,21 @@
     gap: 10px;
 }
 .tag {
-    min-width: 150px;
     background-color: #FF6060;
     color: white;
     font-weight: 500;
     font-size: 14px;
     border-radius: 10px;
-    min-height: 170%;
+    padding: 2.5px 30.5px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .tag {
+        font-size: 10px;
+        padding: 2px 30px;
+        border-radius: 5px;
+    }
 }

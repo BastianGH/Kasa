@@ -56,9 +56,22 @@
 
 .next-button_arrow,
 .prev-button_arrow {
-    width: 46px;
+    width: 46.5px;
 }
 
 .prev-button_arrow {
     transform: rotate( 180deg );
+}
+
+@media screen and (max-width: 600px) {
+    .carousel {
+        height: 255px;
+    }
+    .next-button_arrow,
+    .prev-button_arrow {
+        width: 19.5px;
+    }
+    .carousel__pagination {
+        display: none;
+    }
 }

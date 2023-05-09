@@ -6,7 +6,7 @@
 }
 
 .carousel {
-    padding-bottom: 70px;
+    margin-bottom: 70px;
 }
 .Logement-introduction {
     display: flex;
@@ -55,4 +55,42 @@
 }
 .Logement-details * {
     font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel {
+        margin-bottom: 15px;
+    }
+    .Logement-introduction {
+        flex-direction: column;
+    }
+    .Logement-introduction_infos {
+        padding-bottom: 16px;
+        gap: 10px;
+    }
+    .Logement-introduction_infos-title {
+        font-size: 18px;
+    }
+    .Logement-introduction_infos-location {
+        font-size: 14px;
+    }
+    .Logement-introduction_hostnrate {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16.5px;
+    }
+    .Logement-introduction_host-name {
+        font-size: 12px;
+        width: 30%;
+    } 
+    .Logement-introduction_host-photo {
+        width: 17%;
+    } 
+    .Logement-details .collapse-button_text {
+        font-size: 13px;
+    }
+    .Logement-details .paragraph {
+        font-size: 12px;
+    }
 }
