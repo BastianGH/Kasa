@@ -87,10 +87,17 @@
     .Logement-introduction_host-photo {
         width: 17%;
     } 
+    .Logement-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Logement-details > * {
+        width: 100%;
+    }
     .Logement-details .collapse-button_text {
         font-size: 13px;
     }
-    .Logement-details .paragraph {
+    .Logement-details .collapse-content_text * {
         font-size: 12px;
     }
 }

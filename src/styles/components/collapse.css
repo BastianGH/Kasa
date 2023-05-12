@@ -51,4 +51,7 @@
     .collapse-button_arrow { 
         width: 16px;
     }   
+    .collapse-content {
+        padding: 17px 7px 2px 11.5px;
+    }
 }
