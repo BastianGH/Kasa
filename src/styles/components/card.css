@@ -26,3 +26,18 @@
     display: block;
     width: 40%;
 }
+
+@media (max-width: 1200px) and (min-width: 900px) {
+    .card-caption_text {
+        width: 100%;
+    }
+    .card-img {
+        max-height: 80px;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 650px) {
+    .card-img {
+        height: 70%;
+    }
+}
